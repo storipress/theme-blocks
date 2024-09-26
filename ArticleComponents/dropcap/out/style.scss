@@ -1,0 +1,17 @@
+@use '@storipress/article/mixins';
+
+@include mixins.dropcap('out') {
+  @apply text-5xl;
+  @apply float-left;
+  @apply leading-none;
+  @apply mr-2;
+
+  @screen md {
+    @apply ml-[-0.75em];
+  }
+
+  // firefox ignoring line-height in floated pseudo element
+  @supports (-moz-appearance: none) {
+    @apply mt-[0.12em];
+  }
+}

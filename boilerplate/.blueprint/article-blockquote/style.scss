@@ -1,0 +1,9 @@
+@use '@storipress/article/mixins';
+
+// Please make sure the name at here is same in `index.js`
+@include mixins.blockquote($name: 'regular') {
+  // Your styles here!
+  @apply py-2;
+  @apply px-4;
+  @apply italic;
+}

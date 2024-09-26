@@ -1,0 +1,19 @@
+@use '@storipress/article/mixins';
+
+@include mixins.dropcap('large') {
+  @apply text-5xl;
+  @apply mr-[0.1em];
+  @apply pr-[0.2em];
+  @apply border-solid;
+  @apply border-0;
+  @apply border-r;
+  @apply border-black;
+  @apply float-left;
+  @apply leading-none;
+
+  // firefox ignoring line-height in floated pseudo element
+  @supports (-moz-appearance: none) {
+    @apply mt-[0.05em];
+    @apply py-[0.1em];
+  }
+}

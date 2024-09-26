@@ -1,0 +1,25 @@
+@use '@storipress/article/mixins';
+
+@include mixins.blockquote('left') {
+  @apply float-left;
+  @apply font-bold;
+  @apply uppercase;
+  @apply text-xl;
+  @apply pr-4;
+
+  width: 70%;
+  margin-left: -5%;
+
+  @screen lg {
+    margin-left: -20%;
+  }
+
+  &::before {
+    @apply block;
+    @apply text-4xl;
+    @apply select-none;
+
+    color: #898989;
+    content: '“';
+  }
+}

@@ -1,0 +1,25 @@
+@use '@storipress/article/mixins';
+
+@include mixins.blockquote('block') {
+  color: #2b8bf2;
+
+  &::before,
+  &::after {
+    @apply border-current;
+    @apply block;
+    @apply mx-auto;
+
+    width: 60%;
+    content: '';
+  }
+
+  &::before {
+    @apply border-t;
+    @apply mb-3;
+  }
+
+  &::after {
+    @apply border-b;
+    @apply mt-3;
+  }
+}

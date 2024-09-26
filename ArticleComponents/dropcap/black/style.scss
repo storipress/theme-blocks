@@ -1,0 +1,18 @@
+@use '@storipress/article/mixins';
+
+@include mixins.dropcap('black') {
+  @apply text-[40px];
+  @apply mr-[0.1em];
+  @apply mt-[0.1em];
+  @apply px-[0.25em];
+  @apply pt-[0.06em];
+  @apply text-white;
+  @apply bg-black;
+  @apply float-left;
+  @apply leading-none;
+
+  // firefox ignoring line-height in floated pseudo element
+  @supports (-moz-appearance: none) {
+    @apply py-[0.15em];
+  }
+}

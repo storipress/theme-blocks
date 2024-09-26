@@ -1,0 +1,11 @@
+@use '@storipress/article/mixins';
+
+@include mixins.blockquote('bold') {
+  @apply font-bold;
+  @apply italic;
+  @apply text-lg;
+  @apply pl-4;
+  @apply border-l-4;
+  @apply border-black;
+  @apply my-2;
+}

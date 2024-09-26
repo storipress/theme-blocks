@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env"],
+    "resolveJsonModule": true,
+    "paths": {
+      "@storipress/block": ["./src/sdk/block-sdk"],
+      "@storipress/article": ["./src/sdk/article-sdk"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable"]
+  }
+}

@@ -1,0 +1,14 @@
+@use '@storipress/article/mixins';
+
+@include mixins.blockquote('regular') {
+  @apply border-l;
+  @apply pl-4;
+  @apply italic;
+
+  &::before {
+    @apply inline;
+    @apply select-none;
+
+    content: '“';
+  }
+}

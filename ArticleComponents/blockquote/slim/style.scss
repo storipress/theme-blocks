@@ -1,0 +1,7 @@
+@use '@storipress/article/mixins';
+
+@include mixins.blockquote('slim') {
+  @apply py-4;
+  @apply px-12;
+  @apply italic;
+}

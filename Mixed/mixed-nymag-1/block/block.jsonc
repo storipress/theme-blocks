@@ -1,0 +1,12 @@
+// You should fill in the metadata for your block
+{
+  // Usually, you should specific font with `TextElement` or `TextInput`.
+  // But if you use any extra font, please list it at here
+  "fonts": [],
+
+  // Additional dependencies, please make sure you read the `dependencies policies` before add anything into the list
+  // Please fill it with the same format in package.json
+  "dependencies": {
+    // "lodash": "^4.17.20"
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Block",
+    "value": { "dir": "block" }
+  },
+  {
+    "name": "Hero Block",
+    "value": { "dir": "hero-block" }
+  },
+  {
+    "name": "Footer Block",
+    "value": { "dir": "footer-block" }
+  },
+  {
+    "name": "Article Template",
+    "value": { "dir": "article" }
+  },
+  {
+    "name": "Article Blockquote",
+    "value": { "dir": "article-blockquote" }
+  },
+  {
+    "name": "Subscribe Box",
+    "value": { "dir": "subscribe" }
+  },
+  {
+    "name": "Subscribe Block",
+    "value": { "dir": "subscribe-block" }
+  }
+]

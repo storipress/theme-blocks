@@ -1,0 +1,10 @@
+.pnp.*
+.yarn/**/*
+boilerplate/.yarn/**/*
+boilerplate/inspector/**/*
+boilerplate/.pnp.*
+boilerplate/src/sdk/*
+dist/*
+scripts/.tmp/*
+scripts/inspector/*
+scripts/test-utils.js

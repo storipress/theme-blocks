@@ -1,0 +1,5 @@
+@use '@storipress/article/mixins';
+
+// stylelint-disable-next-line
+@include mixins.dropcap('none') {
+}

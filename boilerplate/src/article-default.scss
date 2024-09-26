@@ -1,0 +1,99 @@
+%default-font {
+  font-family: Roboto, sans-serif;
+}
+
+@mixin padding-block {
+  &::after {
+    display: block;
+    visibility: hidden;
+
+    // need to have content to make it has height
+    content: 'x';
+  }
+}
+
+.article-display {
+  .article {
+    @apply bg-white;
+  }
+
+  .article-title {
+    @extend %default-font;
+  }
+
+  .author-name {
+    @extend %default-font;
+  }
+}
+
+.article-content {
+  @apply flow-root;
+
+  @extend %default-font;
+
+  .main-content {
+    h1,
+    h2,
+    h3,
+    p,
+    blockquote,
+    pre,
+    ul,
+    ol {
+      margin: 0;
+      font-family: inherit;
+    }
+
+    u,
+    em,
+    strong,
+    b,
+    a {
+      font-family: inherit;
+    }
+
+    h1 {
+      &:not(:first-child) {
+        margin-top: 2.5em;
+      }
+    }
+
+    h2 {
+      &:not(:first-child) {
+        margin-top: 1.5em;
+      }
+    }
+
+    > p {
+      @include padding-block;
+    }
+
+    ol {
+      @apply ml-4;
+      @apply pb-4;
+
+      list-style: decimal outside;
+
+      ol {
+        @apply pb-0;
+      }
+    }
+
+    ul {
+      @apply ml-4;
+      @apply pb-4;
+
+      list-style: disc outside;
+
+      ul {
+        @apply pb-0;
+
+        list-style-type: circle;
+
+        ul {
+          list-style-type: square;
+        }
+      }
+    }
+  }
+}

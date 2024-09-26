@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "aaron-bond.better-comments",
+    "bradlc.vscode-tailwindcss",
+    "Vue.volar",
+    "arcanis.vscode-zipfs"
+  ]
+}
